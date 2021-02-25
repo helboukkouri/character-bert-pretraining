@@ -1,17 +1,18 @@
 #!/bin/bash
 
-# Load environment
-module purge
-module load cuda/10.2
+# If you're in a cluster with modules
+# # Load environment
+# module purge
+# module load cuda/10.2
 
-# NOTE: You may want to adapt this part according to your env. settings
-source $WORK/miniconda3/etc/profile.d/conda.sh
+# # NOTE: You may want to adapt this part according to your env. settings
+# source $WORK/miniconda3/etc/profile.d/conda.sh
 conda activate pretraining
 
 set -v
 
-# NOTE: Change the path below to point to the characterbert-pretraining repo
-export WORKDIR="$WORK/temporary/character-bert-pretraining"
+# NOTE: Change the path below so that it points to the root of the repository
+export WORKDIR="$WORK/character-bert-pretraining"
 
 # Number of available GPUs (change accordingly)
 export NUM_GPUs=1

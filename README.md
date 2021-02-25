@@ -225,7 +225,9 @@ remove the `--is_character_bert` flag and adapt the `output_directory` path.
 ### Launching the pre-training
 
 At this point we are all set to start pre-training models. For that, we can
-simply run the following bash scripts
+simply run the following bash scripts.
+
+> NOTE: you may need to change the value of WORKDIR in the pre-training scripts.
 
 - For phase 1:
 
