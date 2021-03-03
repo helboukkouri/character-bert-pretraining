@@ -41,7 +41,7 @@ pip install h5py
 cd external/
 git clone https://github.com/helboukkouri/transformers.git
 cd transformers/
-git checkout 46622ebea3c4112d5eccdff7a4727f0c0aa80abc
+git checkout 914776dd9ec7a711c32b062eec1a7ad1db1c23f3
 pip install -e .
 cd ../..
 
