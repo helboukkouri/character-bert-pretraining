@@ -12,7 +12,10 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-"""Script for formatting Wikipedia Corpora: single file with one article per line."""
+"""
+Script for formatting Wikipedia Corpora: single file with one sentence per line
+and a blank line between sentences from different articles.
+"""
 import os
 import logging
 import argparse
