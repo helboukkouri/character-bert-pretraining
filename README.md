@@ -1,3 +1,5 @@
+> IMPORTANT: as of this version, there seems to be a bug where sometimes the models reach a plateau during pre-training and do not improve anymore. I am currently trying to debug this issue. Thank you for your patience. 😊
+
 # Pre-training CharacterBERT (and BERT)
 
 This is a repository for pre-training **BERT** and **CharacterBERT**.
