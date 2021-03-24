@@ -1,4 +1,4 @@
-> IMPORTANT: as of this version, there seems to be a bug where sometimes the models reach a plateau during pre-training and do not improve anymore. I am currently trying to debug this issue. Thank you for your patience. 😊
+> IMPORTANT: all CharacterBERT models were initialized either randomly - but using ELMo's weights for the CharacterCNN - or from a general version of CharacterBERT in the case of the medical models. It seems that the CharacterBERT architecture can have issues training properly when initialized completely from scratch (including the CharacterCNN part). So if your training loss gets stuck in a plateau, try initializing the CharacterCNN to pre-trained weights!  😊
 
 # Pre-training CharacterBERT (and BERT)
 
