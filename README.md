@@ -1,5 +1,3 @@
-> IMPORTANT: all CharacterBERT models were initialized either randomly - but using ELMo's weights for the CharacterCNN - or from a general version of CharacterBERT in the case of the medical models. It seems that the CharacterBERT architecture can have issues training properly when initialized completely from scratch (including the CharacterCNN part). So if your training loss gets stuck in a plateau, try initializing the CharacterCNN to pre-trained weights!  😊
-
 # Pre-training CharacterBERT (and BERT)
 
 This is a repository for pre-training **BERT** and **CharacterBERT**.
@@ -43,7 +41,7 @@ pip install h5py
 cd external/
 git clone https://github.com/helboukkouri/transformers.git
 cd transformers/
-git checkout 914776dd9ec7a711c32b062eec1a7ad1db1c23f3
+git checkout 756b8efa698aad0294735376bc147909d1e6b959
 pip install -e .
 cd ../..
 
