@@ -51,11 +51,12 @@ class WikipediaCorpusDownloader:
         # change {{language}} with your language of choice.
         self.download_urls = {
             'en': \
-                "https://dumps.wikimedia.org/enwiki/20210101/" \
-                "enwiki-20210101-pages-articles.xml.bz2",
+                "https://dumps.wikimedia.org/enwiki/latest/" \
+                "enwiki-latest-pages-articles.xml.bz2",
             'sample': \
-                "https://dumps.wikimedia.org/enwiki/20210101/" \
-                "enwiki-20210101-pages-articles1.xml-p1p41242.bz2",
+                "https://dumps.wikimedia.org/enwiki/latest/" \
+                "enwiki-latest-pages-articles1.xml-p1p41242.bz2",
+
         }
         self.output_files = {
             # I you add more languages, make sure the archive name is 'wikipedia_{language}.xml.bz2'
